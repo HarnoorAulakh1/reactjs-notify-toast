@@ -67,6 +67,7 @@ function Card({ show, notification, id, type }: Notification) {
       <AnimatePresence>
         {data.show && (
           <motion.div
+          key={id}
             initial={{ x: "100%" }}
             animate={{ x: "-5%" }}
             exit={{ x: "100%" }}
